@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/serialno"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="H"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/serialno"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/names"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/serialno"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>
